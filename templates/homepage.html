@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Murrumbeena Baptist Church — Where People Matter</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e7;--ink:#1f2638;--mut:#5c6070;--gold:#a97f2f;--line:#d9cfbb;--stone:#ece4d2;--card:#fffdf8;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:400;overflow-x:hidden}
+.ser{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-.015em;line-height:1}
+.ser em{font-style:italic;color:var(--gold)}
+.lbl{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;color:var(--gold);display:flex;align-items:center;gap:.8rem}
+.lbl::before{content:"";width:2rem;height:1px;background:var(--gold)}
+.ph{position:relative;overflow:hidden;background:repeating-linear-gradient(135deg,#efe6d3 0 14px,#f4ecda 14px 28px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;color:var(--gold);text-align:center}
+.ph.fill{position:absolute;inset:0}.ph svg{width:1.7rem;height:1.7rem}.ph span{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--mut);padding:0 1rem;line-height:1.5}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.arch{overflow:hidden;position:absolute;bottom:0;border:1.5px solid var(--ink);border-bottom:0;border-radius:999px 999px 0 0}
+.arch::after{content:"";position:absolute;inset:14px 14px 0;border:1px solid var(--ink);border-bottom:0;border-radius:999px 999px 0 0;opacity:.3}
+.card{background:var(--card);border:1px solid var(--line);border-radius:1.25rem;padding:2rem 1.8rem 0;display:flex;flex-direction:column;transition:border-color .25s,box-shadow .25s,transform .25s}
+.card:hover{border-color:var(--gold);box-shadow:0 18px 40px -22px #1f263855;transform:translateY(-3px)}
+.ft{border-top:1px solid var(--line);margin:auto -1.8rem 0;padding:1rem 1.8rem;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--mut)}
+.row{display:grid;grid-template-columns:3rem 1fr auto;align-items:baseline;padding:1.1rem .25rem;border-top:1px solid var(--line);transition:padding .2s,background .2s}
+.row:hover{background:var(--stone);padding-left:1rem}
+.btn{display:inline-block;padding:.85rem 1.7rem;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--ink);transition:background .2s,color .2s}
+.btn.f{background:var(--ink);color:var(--bg)}.btn.f:hover{background:var(--gold);border-color:var(--gold)}
+.btn.o:hover{background:var(--ink);color:var(--bg)}
+nav a.on{color:var(--gold)}
+details summary{list-style:none;cursor:pointer}details summary::-webkit-details-marker{display:none}
+details[open] .pl{transform:rotate(45deg)}
+</style>
+</head>
+<body>
+
+<header class="sticky z-50 backdrop-blur" style="top:env(safe-area-inset-top,0px);background:#f6f1e7e8;border-bottom:1px solid var(--line)">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="#a97f2f"><path d="M10.5 1h3v7.5H21v3h-7.5V23h-3V11.5H3v-3h7.5z"/></svg><span class="ser text-2xl">Murrumbeena <em>Baptist</em></span></a>
+    <nav id="dn" class="hidden md:flex gap-8 text-[.78rem] font-semibold tracking-[.14em] uppercase"></nav>
+    <button id="mb" class="md:hidden text-2xl" aria-label="Menu">☰</button>
+  </div>
+  <nav id="mn" class="hidden md:hidden px-5 pb-5 flex-col gap-3 text-sm font-semibold tracking-[.14em] uppercase"></nav>
+</header>
+
+<!-- BANNER -->
+<section id="home" class="relative px-5 pt-16 md:pt-24" style="background:radial-gradient(34rem 28rem at 78% 70%,#e9d29a66,transparent 70%)">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-10 items-end">
+    <div class="md:col-span-7 pb-10 md:pb-24">
+      <p class="lbl mb-8">Welcome to Murrumbeena Baptist Church</p>
+      <h1 class="ser" style="font-size:clamp(3.6rem,10vw,8.4rem);line-height:.94">Where people <em>matter.</em></h1>
+      <p class="mt-9 text-lg max-w-md leading-relaxed" style="color:var(--mut)">Come as you are. Join us on Sundays at 10:30am for worship, friendship and teaching — you’re always welcome.</p>
+      <div class="mt-9 flex flex-wrap gap-3"><a href="#events" class="btn f">View Events</a><a href="#contact" class="btn o">Plan your visit</a></div>
+    </div>
+    <div class="md:col-span-5 relative h-[22rem] md:h-[34rem] w-full max-w-[24rem] mx-auto md:max-w-none">
+      <div class="arch" style="left:0;width:34%;height:58%"><div class="ph fill" data-ph="hero-left" data-cap="Photo · Friends"></div></div>
+      <div class="arch" style="left:32%;width:38%;height:100%;background:linear-gradient(180deg,#f0dca8,#f8efd6 60%,#f6f1e7)">
+        <div class="ph fill" data-ph="hero-main" data-cap="Photo · Sunday worship"></div></div>
+      <div class="arch" style="right:0;width:30%;height:44%"><div class="ph fill" data-ph="hero-right" data-cap="Photo · Kids"></div></div>
+    </div>
+  </div>
+  <div class="border-t" style="border-color:var(--ink)"></div>
+  <div class="max-w-6xl mx-auto py-4 flex flex-wrap justify-between gap-2 text-[.7rem] font-semibold tracking-[.2em] uppercase" style="color:var(--mut)"><span>Sundays · 10:30am</span><span>44 Murrumbeena Road</span><span>All welcome</span></div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="px-5 pt-24 pb-28">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-6 items-end mb-14">
+      <div class="md:col-span-8"><p class="lbl mb-5">What’s happening</p><h2 class="ser" style="font-size:clamp(2.8rem,6.5vw,5.2rem)">Upcoming <em>events</em></h2></div>
+      <p class="md:col-span-4 leading-relaxed" style="color:var(--mut)">Join us as we deepen our faith, strengthen friendships and serve one another and our wider community.</p>
+    </div>
+    <div id="ev" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <p class="text-xs mt-10" style="color:var(--mut)">Please contact the church for current dates and times of weekly programs.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="px-5 py-28" style="background:var(--stone);border-block:1px solid var(--line)">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-y-14">
+    <p class="lbl md:col-span-3 md:pt-3">About us</p>
+    <p class="ser md:col-span-9" style="font-size:clamp(2.1rem,4.8vw,4.1rem);line-height:1.08">To <em>honour God</em> with our lives, and share the truth and love of Jesus with people everywhere.</p>
+    <div class="md:col-start-4 md:col-span-9 grid md:grid-cols-2 gap-10 pt-6 border-t" style="border-color:var(--line)">
+      <h2 class="ser text-4xl">Let’s bring the world <em>closer together</em></h2>
+      <div class="space-y-4 leading-relaxed" style="color:var(--mut)"><p>At the heart of our community is a commitment to serving others. As Christians, we’re called to be a light in the world, bringing hope and healing to those in need.</p><p>We invite you to join us for worship and discover the joy and peace of belonging to a caring community of faith. We look forward to welcoming you!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFE -->
+<section id="life" class="px-5 py-28">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-6 items-end mb-12"><div class="md:col-span-8"><p class="lbl mb-5">Life together</p><h2 class="ser" style="font-size:clamp(2.8rem,6.5vw,5.2rem)">A place to <em>belong</em></h2></div><p class="md:col-span-4 leading-relaxed" style="color:var(--mut)">From Sunday worship to craft groups and playgroup, there’s a seat at the table for everyone.</p></div>
+    <div class="grid md:grid-cols-12 gap-4 md:gap-5">
+      <div class="ph md:col-span-5 md:row-span-2 min-h-[22rem]" style="border-radius:999px 999px 1rem 1rem" data-ph="life1" data-cap="Photo · Sunday worship"></div>
+      <div class="ph md:col-span-7 min-h-[14rem] rounded-2xl" data-ph="life2" data-cap="Photo · Morning tea after the service"></div>
+      <div class="ph md:col-span-4 min-h-[12rem] rounded-2xl" data-ph="life3" data-cap="Photo · Kids Club"></div>
+      <div class="ph md:col-span-3 min-h-[12rem] rounded-2xl" data-ph="life4" data-cap="Photo · Craft groups"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section id="connect" class="px-5 py-28">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-14">
+    <div class="md:col-span-5">
+      <p class="lbl mb-5">Connect</p>
+      <h2 class="ser" style="font-size:clamp(2.8rem,6vw,4.8rem)">We serve the <em>community</em></h2>
+      <p class="mt-6 leading-relaxed max-w-sm" style="color:var(--mut)">We gather on Sunday mornings for worship, friendship and teaching, and run programs through the week to connect with our neighbours.</p>
+      <div class="mt-10 max-w-sm border overflow-hidden" style="border-color:var(--ink);border-radius:999px 999px .75rem .75rem;background:var(--card)"><div class="ph" style="height:16rem" data-ph="journey" data-cap="Photo · Welcome at the front door"></div><div class="px-8 pb-8 pt-7">
+        <h3 class="ser text-3xl">Plan your <em>journey</em></h3><p class="mt-3 text-sm leading-relaxed" style="color:var(--mut)">Ample parking via our Sydney St driveway, a sound-protected cry room, a preschool creche and a Kids Club for primary-age children.</p></div>
+      </div>
+    </div>
+    <ol id="cn" class="md:col-span-7 md:pt-20 border-b" style="border-color:var(--line)"></ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="px-5 py-28" style="background:var(--stone);border-block:1px solid var(--line)">
+  <div class="max-w-4xl mx-auto">
+    <p class="lbl mb-5">Got questions?</p>
+    <h2 class="ser mb-12" style="font-size:clamp(2.8rem,6.5vw,5.2rem)">Before you <em>visit</em></h2>
+    <div id="fq" class="border-t" style="border-color:var(--ink)"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-5 pt-28 pb-24">
+  <div class="max-w-6xl mx-auto">
+    <p class="lbl mb-5">Contact us</p>
+    <h2 class="ser mb-14" style="font-size:clamp(2.8rem,6.5vw,5.2rem)">Come and <em>visit</em></h2>
+    <div class="ph rounded-3xl mb-12" style="aspect-ratio:21/9;min-height:13rem" data-ph="building" data-cap="Photo · Our church on Murrumbeena Road"></div>
+    <div class="grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-6 p-8 md:p-10 rounded-3xl border" style="background:var(--card);border-color:var(--line)">
+        <h3 class="lbl mb-6">Opening hours</h3>
+        <dl id="hr" class="space-y-3"></dl>
+      </div>
+      <div class="md:col-span-6 flex flex-col justify-between gap-8 md:pl-6">
+        <div><h3 class="lbl mb-6">Find us here</h3>
+        <p class="ser text-5xl md:text-6xl">44 Murrumbeena <em>Road</em></p>
+        <p class="mt-3" style="color:var(--mut)">Murrumbeena VIC 3163 · entrance on Sydney St</p>
+        <a href="tel:0395687159" class="ser block mt-6 text-4xl underline decoration-1 underline-offset-8" style="text-decoration-color:var(--gold)">(03) 9568 7159</a></div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Murrumbeena+Baptist+Church" target="_blank" rel="noopener" class="btn f self-start">Open in Google Maps ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="px-5 py-12 border-t" style="border-color:var(--line);background:var(--stone)">
+  <div class="max-w-6xl mx-auto flex flex-wrap items-end justify-between gap-6">
+    <div class="max-w-sm"><p class="ser text-2xl">Murrumbeena <em>Baptist Church</em></p><p class="text-sm mt-2" style="color:var(--mut)">To honour God with our lives, and share the truth and love of Jesus with people everywhere.</p></div>
+    <p class="text-xs" style="color:var(--mut)">Privacy Policy · Child Safety Policy<br>© 2026 Murrumbeena Baptist Church · <a href="#home" class="underline">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const nav=[['home','Home'],['about','About'],['connect','Connect'],['events','Events'],['faq','Got Questions?'],['contact','Contact Us']];
+$('#dn').innerHTML=nav.map(n=>`<a href="#${n[0]}">${n[1]}</a>`).join('');
+$('#mn').innerHTML=nav.map(n=>`<a href="#${n[0]}">${n[1]}</a>`).join('');
+const E=[['Every Sunday','Sunday Worship Gathering','Worship, teaching and friendship, with a creche for preschoolers and a Kids Club for primary-age children.','10:30am · 44 Murrumbeena Rd'],
+['Weekly','Playgroup &amp; Playspace','Room for little ones to play and for carers to meet other families nearby.','Families welcome'],
+['Community','Food Co-op','Fresh food shared with neighbours, at prices that make life a little easier.','Open to everyone'],
+['Craft','Sew Inspired Patchworkers','Stitch, swap ideas and share a cuppa with our SIPS patchwork group.','All skill levels'],
+['Craft','Knitting Group','Bring your needles and a friend for easy conversation and warm woollies.','Beginners welcome'],
+['Groups','Small Group Discussions','Explore faith and life together in friendly, relaxed small groups.','Come and see']];
+const R=['I','II','III','IV','V','VI'];
+$('#ev').innerHTML=E.map((e,i)=>`<article class="card"><div class="ph rounded-xl" style="aspect-ratio:4/3" data-ph="ev${i}" data-cap="Photo · ${e[1]}"></div><div class="flex items-baseline justify-between mt-6"><span class="ser text-3xl" style="color:var(--gold);font-style:italic">${R[i]}</span><span class="text-[.68rem] tracking-[.2em] uppercase font-semibold" style="color:var(--mut)">${e[0]}</span></div><h3 class="ser text-[2rem] mt-6">${e[1]}</h3><p class="mt-3 mb-8 text-[.95rem] leading-relaxed" style="color:var(--mut)">${e[2]}</p><div class="ft">${e[3]}</div></article>`).join('');
+$('#cn').innerHTML=['Sunday Services &amp; Celebrations','Food Co-op','Sew Inspired Patchworkers (SIPS)','Knitting Group','Playgroup / Playspace','Community Development','Student Accommodation'].map((t,i)=>`<li class="row"><span class="ser text-xl" style="color:var(--gold);font-style:italic">0${i+1}</span><span class="ser text-3xl">${t}</span><span style="color:var(--gold)">→</span></li>`).join('');
+const Q=[['When are your services?','Our Sunday Worship Gathering starts at 10:30am at 44 Murrumbeena Road.'],['Is there something for my kids?','Yes — a preschool creche, a Kids Club for primary-age children and a sound-protected cry room.'],['Where do I park?','There’s ample parking via our driveway on Sydney Street, which is also our entrance.'],['What happens during the week?','Playgroup, craft groups, a food co-op and small group discussions. See Events above or get in touch.']];
+$('#fq').innerHTML=Q.map(q=>`<details class="py-6 border-b" style="border-color:var(--line)"><summary class="flex items-center justify-between gap-6"><span class="ser text-3xl">${q[0]}</span><span class="pl text-3xl transition" style="color:var(--gold)">+</span></summary><p class="mt-4 max-w-xl leading-relaxed" style="color:var(--mut)">${q[1]}</p></details>`).join('');
+const H=[['Monday','10:00 – 15:00'],['Tuesday','10:00 – 15:00'],['Wednesday','10:00 – 15:00'],['Thursday – Saturday','Closed'],['Sunday','10:00 – 12:30']];
+$('#hr').innerHTML=H.map(h=>`<div class="flex items-baseline gap-3 ${h[0]=='Sunday'?'font-semibold':''}" style="${h[0]=='Sunday'?'color:var(--gold)':''}"><dt>${h[0]}</dt><dd class="flex-1 border-b border-dotted" style="border-color:var(--line)"></dd><dd>${h[1]}</dd></div>`).join('');
+const PHOTOS={}; // add photos by key, e.g. 'hero-main':'data:image/jpeg;base64,...'
+document.querySelectorAll('[data-ph]').forEach(el=>{const s=PHOTOS[el.dataset.ph];el.innerHTML=s?`<img src="${s}" alt="${el.dataset.cap}">`:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><span>${el.dataset.cap}</span>`});
+$('#mb').onclick=()=>{$('#mn').classList.toggle('hidden');$('#mn').classList.toggle('flex')};
+document.querySelectorAll('#mn a').forEach(a=>a.onclick=()=>{$('#mn').classList.add('hidden');$('#mn').classList.remove('flex')});
+const L=[...document.querySelectorAll('#dn a')];
+const so=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)L.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>so.observe(s));
+</script>
+</body>
+</html>

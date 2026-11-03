@@ -1,0 +1,62 @@
+base_url = "https://regeneration.org.au"
+compile_sass = false
+build_search_index = false
+minify_html = true
+output_dir = "dist"
+
+[markdown]
+external_links_target_blank = true
+
+[extra]
+
+[[extra.nav_menu]]
+title = "About"
+
+    [[extra.nav_menu.menu]]
+    link = "/about/leaders"
+    icon = "leaders"
+    title = "Our Leaders"
+    desc = "Pastors and Ministry Leaders"
+
+    [[extra.nav_menu.menu]]
+    link = "/about/values-and-beliefs"
+    icon = "bible"
+    title = "Our Values and Beliefs"
+    desc = "Our Purpose and Mission"
+
+[[extra.nav_menu]]
+title = "Our Church"
+
+    [[extra.nav_menu.menu]]
+    link = "/church/events"
+    icon = "trumpet"
+    title = "Events"
+    desc = "What's Happening"
+
+    [[extra.nav_menu.menu]]
+    link = "/church/mcs"
+    icon = "group"
+    title = "MCs"
+    desc = "Find a Small Group"
+
+    [[extra.nav_menu.menu]]
+    link = "/church/childrens-ministry"
+    icon = "baby"
+    title = "Children's Ministry"
+    desc = "Faith like a Mustard Seed"
+
+    [[extra.nav_menu.menu]]
+    link = "/church/venue-hire"
+    icon = "church"
+    title = "Venue Hire"
+    desc = "Church Hire Policy"
+
+[[extra.nav_menu]]
+link = "/connect"
+icon = "handshake"
+title = "Connect"
+
+[[extra.nav_menu]]
+link = "/connect#0004"
+icon = "people-heart"
+title = "Giving"
